@@ -1,0 +1,11 @@
+<!-- <button (click)="executeAction({data:null, action:'add_all'})">ADD</button>
+<button>DELETE ALL</button> -->
+
+<div>
+    <button
+        *ngFor="let button of buttons"
+        (click)="executeAction({data:null, action:button.action})"
+        >
+        {{button.label}}
+    </button>
+</div>
